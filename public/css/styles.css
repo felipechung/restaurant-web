@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #b9ac92;
+    --secondary-color: #ffa931;
+    --secondary-lighter: #fecb89;
+    --text-menu: #fbe6d4;
+    --text-description: #868E96;
+}
+
+/* Landing */
+
+body{
+    font-family: "Poppins", sans-serif; 
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.landing {
+    background-color: rgb(211,211,211, 0.2);
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.landing:before {
+    content:'';
+    background: url('../images/background-img.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.landing .landing-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.landing h1 {
+    font-size: 5rem;    
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {    
+    
+    border-radius: 5px;
+    background-color: #ffa931;
+    color: white;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #ffa931;
+}
+
+.landing-inner {
+
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/* End of Landing */
+
+/* Features */
+
+.feat-back {
+    background-color: #ffa931;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1.8rem;
+    
+}
+
+.feat {
+    padding: 6rem 1.2rem;
+}
+
+.features {
+    display: flex;
+    align-items: left;
+    justify-content: center;  
+    background-color: #F8F9FA;  
+}
+
+.feat-title, .feat-description {
+    text-align: center;    
+}
+
+.feat-title {
+    color: #ffa931;
+    font-size: 1.1rem;
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+.feat-description {
+    color: #868E96;
+    max-width: 250px;
+    font-size: .9rem;    
+}
+
+.feat-icon {
+    color: white;
+}
+
+@media (max-width: 768px){
+    .features {
+        flex-direction: column; 
+        align-items: center;             
+    }
+
+
+
+    
+}
+/* End of Features */
+
+/* Menu */
+
+.menu {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+}
+.menu h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+hr {
+    border-style: solid none none;
+    border-width: 2px;
+    width: 4rem;
+    color: #ffa931;
+    margin: 6rem auto;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;    
+    margin-left: auto;    
+}
+
+.menu-items .item {
+    padding: 3rem;
+}
+
+.item-title {
+    color: #ffa931;
+}
+
+.item-content {
+    color: #868E96;
+    max-width: 300px;
+}
+
+.item-price {
+    color: #ffa931;
+}
+
+/* End of Menu */
+
+/* Footer */
+
+footer {
+    background-color: #F8F9FA ;   
+    
+    }
+
+footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;    
+}
+
+.content-section {
+    padding: 4rem;
+}
+
+.foot-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.foot-subtitle{
+    font-weight: 400;
+
+}
+
+.foot-description {
+    color: #868E96;
+    font-size: .9rem;
+}
+
+.phone {
+    margin-top: 1rem;
+}
+
+.footer-link {
+    color: #ffa931;
+    margin-right: .7rem;
+    transition: all 0.4s ease;
+}
+
+.footer-link:hover {
+    color: black;
+}
+
+.copyrights {
+   text-align: center;
+   font-size: .8rem;  
+}
+
+
+
+
