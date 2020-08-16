@@ -1,0 +1,61 @@
+<%- include('partials/header'); -%> 
+
+    <div class="features">
+      <div class="feat">
+        <div class="feat-back">
+          <i class="fas fa-utensils fa-2x feat-icon"></i>
+        </div>
+        <p class="feat-title">
+          Almoço para todos os gostos
+        </p>
+        <p class="feat-description">
+          Pratos diversificados para almoço com opções de massas, pratos com
+          arroz e saladas.
+        </p>
+      </div>
+      <div class="feat">
+        <div class="feat-back">
+          <i class="fas fa-carrot fa-2x feat-icon"></i>
+        </div>
+        <p class="feat-title">
+          Comida feita a partir do zero
+        </p>
+        <p class="feat-description">
+          Procuramos sempre utilizar produtos naturais na confecção dos pratos.
+        </p>
+      </div>
+      <div class="feat">
+        <div class="feat-back">
+          <i class="fa fa-rocket fa-2x feat-icon"></i>
+        </div>
+        <p class="feat-title">
+          Entrega Rápida
+        </p>
+        <p class="feat-description">
+          Faça o pedido pelo ifood ou uber eats e receba a comida quentinha!
+        </p>
+      </div>
+    </div>
+
+    <div id="menu" class="menu">
+      <hr />
+      <h2 class="title">Cardápio</h2>
+      <ul class="tabs">
+        <li data-tab-target="#massas" class="active tab">Massas</li>
+        <li data-tab-target="#arroz" class="tab">Arroz</li>
+        <li data-tab-target="#saladas" class="tab">Saladas</li>
+        <li data-tab-target="#bebidas" class="tab">Bebidas</li>
+        <li data-tab-target="#acompanhamentos" class="tab">Acompanhamentos</li>
+      </ul>
+      <div class="tab-content">
+        <%- include('partials/menu1'); -%>
+        <%- include('partials/menu2'); -%>
+        <%- include('partials/menu3'); -%>
+        <%- include('partials/menu4'); -%>
+        <%- include('partials/menu5'); -%>
+        
+      </div>
+    </div>
+
+
+    <%- include('partials/footer'); -%> 

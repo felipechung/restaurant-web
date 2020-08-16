@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/1807b802f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panini House</title>
+  </head>
+
+  <body>
+    <header class="landing animate__animated animate__fadeIn">
+      <nav class="navbar">
+        <div class="logo"><span>PANINI</span>HOUSE</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <a href="/">Início</a>
+            </li>
+            <li>
+              <a href="#menu">Cardápio</a>
+            </li>
+            <li>
+              <a href="/contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container landing-inner animate__animated animate__fadeInDown">
+        <h1><%= firstMessage %></h1>
+        <p><%= secondMessage %></p>
+        <a href="#menu" class="btn">Começar</a>
+      </div>
+    </header>

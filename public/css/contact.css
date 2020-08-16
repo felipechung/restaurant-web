@@ -47,6 +47,7 @@ textarea { resize: vertical; }
 }
 
 .button {
+    font-weight: 600;
     border-radius: 5px;
     background-color: #ffa931;
     color: white;
@@ -76,4 +77,17 @@ h4 {
     }
 
 }
+
+.sweet-confirm{
+    background-color: #ffa931;
+
+    
+}
+   
+.sweet-confirm:not([disabled]):hover{
+    background-color: white;
+    color: #ffa931 ;
+}
+
+
 

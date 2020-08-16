@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+
+    <div id="contact-page" class="contact-page">
+      
+        <div class="input-section">
+          <form action="/contact" method="POST">
+            <label class="label" for="name">Nome</label>
+            <input class="input-box" type="text" name="name" id="name"/>
+            <label class="label" for="email">Email</label>
+            <input class="input-box" type="text" name="email" id="email" />
+            <label class="label" for="message">Mensagem</label>
+            <textarea
+              class="input-box"
+              name="message"
+              id="message""
+              rows="8"
+              
+            ></textarea>
+            <button class="button" id="send-message" type="submit">Enviar mensagem</button>
+            
+            
+          </form>
+        </div>
+      
+
+      <div class="details-section">
+        <h4>Detalhes de Contato</h4>
+        <div class="contact-detail">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <p>
+            Rua Princesa Isabel, 602 Cidade Alta, Natal/RN
+          </p>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-phone-alt icon"></i>
+          <p>(84) 98810-5945</p>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-envelope icon"></i>
+          <p>email@email.com</p>
+        </div>
+
+      </div>
+    </div>
+
+    <%- include('partials/footer'); -%>
