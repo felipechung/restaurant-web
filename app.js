@@ -85,6 +85,7 @@ app.post("/contact", (req, res) => {
   message.save(function(err){
     if(err){
       console.log(err);
+      res.redirect("/contact")
     }else {
       transporter.sendMail(mailOptions, function(err,info){
         if(err){
