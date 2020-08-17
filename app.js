@@ -90,9 +90,9 @@ app.post("/contact", (req, res) => {
         if(err){
           console.log(err);
         }else {      
-    
-          console.log("Email sent");
           
+          console.log("Email sent");
+          res.redirect("/contact")
         }
       }) 
     }
