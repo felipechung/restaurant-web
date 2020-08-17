@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%> 
+
+    <div id="menu" class="menu">
+        <hr />
+        <h2 class="title">Cardápio</h2>
+        <ul class="tabs">
+          <li data-tab-target="#massas" class="active tab">Massas</li>
+          <li data-tab-target="#arroz" class="tab">Arroz</li>
+          <li data-tab-target="#saladas" class="tab">Saladas</li>
+          <li data-tab-target="#bebidas" class="tab">Bebidas</li>
+          <li data-tab-target="#acompanhamentos" class="tab">Acompanhamentos</li>
+        </ul>
+        <div class="tab-content">
+          <%- include('partials/menu1'); -%>
+          <%- include('partials/menu2'); -%>
+          <%- include('partials/menu3'); -%>
+          <%- include('partials/menu4'); -%>
+          <%- include('partials/menu5'); -%>
+          
+        </div>
+      </div>
+  
+  
+<%- include('partials/footer'); -%> 

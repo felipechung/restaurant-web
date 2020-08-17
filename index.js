@@ -35,15 +35,15 @@ const messageSchema = new mongoose.Schema({
 const Message = mongoose.model('Message', messageSchema);
 
 app.get("/", (req, res) => {
-  res.render("index", {firstMessage: "Fresh Food", secondMessage:"Comida feita a partir do zero" });
+  res.render("index", {firstMessage: "Fresh Food", secondMessage:"Comida feita a partir do zero", target:"#menu" });
 });
 
 app.get("/contact", (req,res)=> {
-  res.render('contact', {firstMessage: "Contato", secondMessage:"Entre em contato conosco"});
+  res.render('contact', {firstMessage: "Contato", secondMessage:"Entre em contato conosco", target:"#contact-page"});
 })
 
-app.get("/success", (req, res) => {
-  res.render("success");
+app.get("/menu", (req, res) => {
+  res.render("menu", {firstMessage: "Cardápio", secondMessage:"Veja o nosso cardápio", target:"#menu"});
 })
 
 app.post("/contact", (req, res) => {
@@ -60,16 +60,16 @@ app.post("/contact", (req, res) => {
     port: 587,
     
     auth: {
-      user: "dominique.gulgowski37@ethereal.email", // 
-      pass: "tmw4kMUNzgMYCv9UzY", // 
+      user: "julie.weimann@ethereal.email", // 
+      pass: "aS2Gzr3ndWcFTMVQnY", // 
     },
 
   });
 
   // send mail with defined transport object
   let mailOptions = {
-    from: '"Panini website" <dominique.gulgowski37@ethereal.email>', // sender address
-    to: "dominique.gulgowski37@ethereal.email", // list of receivers
+    from: '"Panini website" <julie.weimann@ethereal.email>', // sender address
+    to: "julie.weimann@ethereal.email", // list of receivers
     replyTo: req.body.email,
     subject: "Panini mensagem", // Subject line
     
