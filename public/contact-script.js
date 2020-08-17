@@ -12,8 +12,10 @@ buttonSend.addEventListener("click", ()=> {
             icon: "error",
             buttons: {
                 confirm : {text:'OK',className:'sweet-confirm'},                
-            },
-        })
+            }
+        }).then(function() {
+            window.location = __dirname + "/contact";
+        });
     } else {
         swal({
             title: "Obrigado!",
@@ -23,7 +25,7 @@ buttonSend.addEventListener("click", ()=> {
                 confirm : {text:'OK',className:'sweet-confirm'},                
             },
         }).then(function() {
-            window.location = "http://localhost:3000/contact";
+            window.location = __dirname + "/contact";
         });
     }
 })
