@@ -1,11 +1,12 @@
 const buttonSend = document.getElementById("send-message");
-buttonSend.addEventListener("click", ()=> {
-
+buttonSend.addEventListener("click", (event)=> {
+    
     const nome = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;    
     
     if(nome == "" || email == "" || message == ""){
+        event.preventDefault()
         swal({
             title: "Ops!",
             text: "Verifique os campos novamente",
@@ -13,9 +14,7 @@ buttonSend.addEventListener("click", ()=> {
             buttons: {
                 confirm : {text:'OK',className:'sweet-confirm'},                
             }
-        }).then(function() {
-            window.location = __dirname + "/contact";
-        });
+        })
     } else {
         swal({
             title: "Obrigado!",
